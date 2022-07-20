@@ -1,11 +1,11 @@
 clone of www.cricket.com
 
 Team 
-Nishant kumar singh
-Md Ali Mujtaba
-Aamir Khan Zahir Khan
-Janhavi Prabhu
-Sagar Thakur
+Nishant kumar singh--- homepage and more section
+Md Ali Mujtaba---navbar login footer videos
+Aamir Khan Zahir Khan--schedule criclytics
+Janhavi Prabhu--teams news
+Sagar Thakur---players ..fantasy/series
 
 manager
 Abhishek Dadhich
