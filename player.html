@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        #cana{
+            width: 1000px;
+            background-color: white;
+            margin: auto;
+            
+        }
+        #forsearch{
+            height: 50px;
+            
+            margin-left: 100px;
+           
+        }
+        #search{
+            height: 30px;
+            border-radius: 20px;
+            border: .5px solid gray;
+            width: 800px;
+            margin-top:10px;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        #fSearchcountry{
+            height: 150px;
+            display: flex;
+            flex-direction:column;
+            justify-content:space-around;
+        }
+        #buttons{
+            height: 50px;
+            width: 900px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .but{
+            border: 0;
+            height: 27px;
+            width: 150px;
+            border-radius: 15px;
+        }
+        #all{
+            background-color: brown;
+            color: white;
+        }
+        #forconteinar{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        #div{
+            width: 180px;
+            height: 200px;
+            text-align: center;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; */
+        }
+        #photoimg{
+            width: 180px;
+            height: 180px;
+        }
+        #Plname{
+            background-color: rgba(129, 127, 127, 0.341);
+        }
+    </style>
+</head>
+<body>
+    <div id="cana">
+       <div id="fSearchcountry">
+        <div id="forsearch">
+            <input type="text" id="search" placeholder="Search" oninput="forsearch()"> 
+        </div>
+        <div id="buttons">
+           <button onclick="Allcountry()" class="but" id="all">ALL</button>
+           <button onclick="India()" class="but" id="india">IND</button>
+           <button onclick="NewZeelend()" class="but" id="newzi">NZ</button>
+           <button onclick="Austelia()" class="but" id="austa">AUS</button>
+           <button onclick="England()" class="but" id="engl">ENG</button>
+        </div>
+       </div>
+       <div id="forconteinar">
+
+       </div>
+    </div>
+</body>
+</html>
+<script>
+    function forsearch(){
+        var urlFsearch = `https://api.cricapi.com/v1/players?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&offset=0&search=ks_bharat"`;
+        async function forfatch1(){
+             res = await fetch(urlFsearch);
+             Data = await res.json();
+             var infoarray = (Data.data);
+             infoarray.forEach(function(ele){
+                 var playerid =  ele.id;
+                 var urlinfo = `https://api.cricapi.com/v1/players_info?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&id=${playerid}`;
+                  async function innerface(){
+                     res = await fetch(urlinfo);
+                     data = await res.json();
+                     console.log(data)
+                  }
+                  innerface()
+             })
+        }
+        forfatch1()
+    }
+
+    function Allcountry(){
+        var arrFind = [
+        "h_vihari",
+        "ks_bharat",
+        "bsm_ayyappa",
+        "r_bhui",
+        "girinath_reddy",
+        "cr_gnaneshwar",
+        "karan_shinde",
+        "manish golamaru",
+        "naren_reddy",
+        "dara_bengimen_prasanth_kumar",
+        "pr_yarra",
+        "jyothi_sai_krishna",
+        "cheepurapalli_stephen",
+        "kv_sasikanth",
+        "b_sumanth",
+        "p_vijaykumar",
+
+        "rg_sharma",
+        "s_dhawan",
+        "l_rahul",
+        "a_rayudu",
+        "m_pandey",
+        "k_jadhav",
+        "ms_dhoni",
+        "d_karthik",
+        "h_pandya",
+        "k_yadav",
+        "y_chahal",
+        "a_patel",
+        "b_kumar",
+        "j_bumrah",
+        "s_thakur",
+        "kh_ahmed",
+        "r_jadeja",
+        "d_chahar",
+        "s_kaul",
+
+        "ai_hasan",
+        "t_iqbal",
+        "m_mortaza",
+        "m_mithun",
+        "m_rahim",
+        "ar_haque",
+        "m_mahmudullah",
+        "mo_hossain",
+        "meh_hasan",
+        "naz_islam",
+        "ab_hider",
+        "m_rahman",
+        "nh_shanto",
+        "m_haque",
+        "r_hossain",
+        "l_das",
+        "i_kayes",
+        "s_sarkar",
+
+        "f_zaman",
+        "i_haq",
+        "b_azam",
+        "s_masood",
+        "sa_ahmed",
+        "s_malik",
+        "h_sohail",
+        "sha_khan",
+        "moh_nawaz",
+        "fa_ashraf",
+        "has_ali",
+        "j_khan",
+        "u_khan",
+        "as_ali",
+        "moh_amir",
+        "se_afridi",
+
+        "a_mathews",
+        "k_perera",
+        "k_mendis",
+        "u_tharanga",
+        "d_gunathilaka",
+        "t_perera",
+        "d_shanaka",
+        "dm_de_silva",
+        "a_dananjaya",
+        "d_perera",
+        "a_aponso",
+        "k_rajitha",
+        "s_lakmal",
+        "d_chameera",
+        "l_malinga",
+        "d_chandimal",
+        "nella",
+        "s_jayasuriya",
+    ]
+        for(var i=0;i<arrFind.length;i++){
+            var urlFsearch = `https://api.cricapi.com/v1/players?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&offset=0&search=${arrFind[i]}`;
+            async function forfatchALL(){
+                res = await fetch(urlFsearch);
+                Data = await res.json();
+                var infoarray = (Data.data);
+                // console.log(infoarray)
+                infoarray.forEach(function(ele){
+                    var playerid =  ele.id;
+                    var urlinfo = `https://api.cricapi.com/v1/players_info?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&id=${playerid}`;
+                    async function innerfaceALL(){
+                        res = await fetch(urlinfo);
+                        data = await res.json();
+                        // console.log(data.data)
+                        var photoimg = data.data.playerImg
+                        var divFallplayer = document.createElement("div");
+                            divFallplayer.setAttribute("id","div")
+                        
+                        var img = document.createElement("img");
+                            img.setAttribute("src",photoimg);
+                            img.setAttribute("id","photoimg")
+                            
+                        
+                        var Plname = document.createElement("p")
+                            Plname.setAttribute("id","Plname")
+                            Plname.innerText= data.data.name
+                        
+                        divFallplayer.append(img,Plname);
+                        document.querySelector("#forconteinar").append(divFallplayer)
+                    }
+                    innerfaceALL()
+                })
+            }
+            forfatchALL()
+        }
+    }
+
+</script>
