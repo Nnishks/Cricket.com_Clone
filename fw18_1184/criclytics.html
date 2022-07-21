@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/criclytics.css">
+
+
+</head>
+
+<body>
+    <!-- 22sxRL425YDSgRbG3EA1bxNUgmzjn68new1KuUtIigAMoR6E4cscqvYH8AZ0 -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade mainbox " data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active cls1 " data-bs-interval="3000">
+                <img src="https://www.cricket.com/pngs/Banner-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block capt1">
+                    <h1>COMPREHENSIVE </h1>
+                    <h1>STATS</h1>
+                </div>
+            </div>
+            <div class="carousel-item cls1" data-bs-interval="3000">
+                <img src="https://www.cricket.com/pngs/Banner-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block capt2">
+                    <h1>MATCH</h1>
+                    <h1>PREDICTION</h1>
+                    <p>Player Projections </p>
+                    <p>Score Predictions</p>
+                </div>
+            </div>
+            <div class="carousel-item cls1" data-bs-interval="3000">
+                <img src="https://www.cricket.com/pngs/banner-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block capt3">
+                    <h1>CRICLYTICS<span class="sup">&trade;</span></h1>
+                    <p1>The most powerful </p1>
+                    <p>Predictive cricket algorithm</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-indicators indc">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <!-- https://www.cricket.com/pngs/banner-1.jpg -->
+    <!-- https://www.cricket.com/pngs/Banner-2.jpg -->
+    <!-- https://www.cricket.com/pngs/Banner-3.jpg -->
+    <!--bootstrap end  bootstrap end   bootstrap end bootstrap end bootstrap end bootstrap end bootstrap end bootstrap end -->
+    <!-- api=Copied: 8fddc409-3bb7-4e49-94a4-78b9192fe77b -->
+    <!-- match completed=https://api.cricapi.com/v1/match_info?apikey=8fddc409-3bb7-4e49-94a4-78b9192fe77b&id=2a201c58-f701-4f66-95f2-78d246451390 -->
+    <!-- upcomming=https://api.cricapi.com/v1/cricScore?apikey=8fddc409-3bb7-4e49-94a4-78b9192fe77b -->
+    <!-- live=https://api.cricapi.com/v1/currentMatches?apikey=8fddc409-3bb7-4e49-94a4-78b9192fe77b&offset=0 -->
+    <div id="div_main">
+        <div id="upcomming">
+            <h1 class="mainheading">UPCOMING</h1>
+            <div id="upcomming2"></div>
+        </div>
+        <div id="live">
+            <h1 class="mainheading">LIVE</h1>
+            <div id="live_div2">
+
+            </div>
+
+        </div>
+        <div id="completed">
+            <h1 class="mainheading">COMPLETED</h1>
+            <div id="completed_div2">
+
+
+            </div>
+        </div>
+</body>
+
+
+</html>
+<script src="/script/criclytics.js" type="module"></script>
