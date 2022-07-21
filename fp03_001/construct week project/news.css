@@ -1,0 +1,124 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+body{
+    background-color:#e8e9ef
+}
+#news_categories{
+    display: flex;
+    
+    width:68%;
+    margin: auto;
+    gap: 30px;
+}
+#Latest{
+    padding: 3px;
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: .25rem;
+
+}
+#Latest:hover{
+    padding: 3px;
+    width: 100px;
+    color: white;
+    border: none;
+     background-image: linear-gradient(270deg, rgb(212, 64, 48), rgb(155, 0, 13));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    /* background-repeat-x: initial;
+    background-repeat-y: initial; */
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+#News{
+    background-image: linear-gradient(270deg, rgb(212, 64, 48), rgb(155, 0, 13));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    /* background-repeat-x: initial;
+    background-repeat-y: initial; */
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+
+}
+#On_this{
+    background-image: linear-gradient(270deg, rgb(212, 64, 48), rgb(155, 0, 13));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    /* background-repeat-x: initial;
+    background-repeat-y: initial; */
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+
+}
+#Match{
+    background-image: linear-gradient(270deg, rgb(212, 64, 48), rgb(155, 0, 13));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    /* background-repeat-x: initial;
+    background-repeat-y: initial; */
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+
+}
+#Features{
+    background-image: linear-gradient(270deg, rgb(212, 64, 48), rgb(155, 0, 13));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    /* background-repeat-x: initial;
+    background-repeat-y: initial; */
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+/* styling for news cards */
+#card{
+    background-color: white;
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+}
+#banner{
+    width: 480px;
+    height: 220px;
+}
+#category{
+    position: relative;
+    width: 90px;
+    margin-top: -40px;
+    font-size: 14px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(270deg, rgb(212, 64, 48), rgb(155, 0, 13));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    /* background-repeat-x: initial;
+    background-repeat-y: initial; */
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
