@@ -330,8 +330,42 @@ let other_leagues = [
 
 
 let display_leagues= (other_leagues)=>{
+  document.getElementById("box1").innerHTML=null;
+  document.getElementById("box2").innerHTML = null;
+
 
     other_leagues.forEach((ele)=>{
-        
+
+      let card= document.createElement("div")
+      card.id="women_div"
+
+      let name= document.createElement("h5")
+      name.innerText=ele.team_name;
+
+      let img=document.createElement("img")
+      img.src=ele.team_img;
+
+      let winner= document.createElement("div")
+      winner.id="winner";
+
+      let cup= document.createElement("img")
+      cup.src=ele.cup 
+      cup.id="cup"
+      
+      let year= document.createElement("p")
+      year.innerText=ele.year;
+      year.id="year";
+
+      winner.append(cup,year)
+      card.append(name,img,winner)
+      document.getElementById("box2").append(card)
     })
+}
+
+document.getElementById("other_league").addEventListener("click",display_league)
+
+function display_league(){
+  
+
+    display_leagues(other_leagues)
 }
