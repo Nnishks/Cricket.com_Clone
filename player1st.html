@@ -90,8 +90,8 @@
         <div id="buttons">
            <button onclick="Allcountry()" class="but" id="all">ALL</button>
            <button onclick="India()" class="but" id="india">IND</button>
-           <button onclick="NewZeelend()" class="but" id="newzi">NZ</button>
-           <button onclick="Austelia()" class="but" id="austa">AUS</button>
+           <button onclick="paksitan()" class="but" id="newzi">PAK</button>
+           <button onclick="Shreeilanka()" class="but" id="austa">SLK</button>
            <button onclick="England()" class="but" id="engl">ENG</button>
         </div>
        </div>
@@ -103,7 +103,9 @@
 </html>
 <script>
     function forsearch(){
-        var urlFsearch = `https://api.cricapi.com/v1/players?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&offset=0&search=ks_bharat"`;
+        document.querySelector("#forconteinar").innerHTML=null
+        var input = document.querySelector("#search").value;
+        var urlFsearch = `https://api.cricapi.com/v1/players?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&offset=0&search=${input}"`;
         async function forfatch1(){
              res = await fetch(urlFsearch);
              Data = await res.json();
@@ -114,7 +116,22 @@
                   async function innerface(){
                      res = await fetch(urlinfo);
                      data = await res.json();
-                     console.log(data)
+                    //  console.log(data)
+                     var photoimg = data.data.playerImg
+                        var divFallplayer = document.createElement("div");
+                            divFallplayer.setAttribute("id","div")
+                        
+                        var img = document.createElement("img");
+                            img.setAttribute("src",photoimg);
+                            img.setAttribute("id","photoimg")
+                            
+                        
+                        var Plname = document.createElement("p")
+                            Plname.setAttribute("id","Plname")
+                            Plname.innerText= data.data.name
+                        
+                        divFallplayer.append(img,Plname);
+                        document.querySelector("#forconteinar").append(divFallplayer)
                   }
                   innerface()
              })
@@ -123,98 +140,32 @@
     }
 
     function Allcountry(){
+        document.querySelector("#forconteinar").innerHTML=null
         var arrFind = [
         "h_vihari",
-        "ks_bharat",
-        "bsm_ayyappa",
         "r_bhui",
         "girinath_reddy",
         "cr_gnaneshwar",
-        "karan_shinde",
-        "manish golamaru",
         "naren_reddy",
-        "dara_bengimen_prasanth_kumar",
-        "pr_yarra",
-        "jyothi_sai_krishna",
-        "cheepurapalli_stephen",
-        "kv_sasikanth",
-        "b_sumanth",
         "p_vijaykumar",
-
         "rg_sharma",
         "s_dhawan",
         "l_rahul",
-        "a_rayudu",
-        "m_pandey",
-        "k_jadhav",
-        "ms_dhoni",
-        "d_karthik",
-        "h_pandya",
-        "k_yadav",
-        "y_chahal",
-        "a_patel",
-        "b_kumar",
-        "j_bumrah",
-        "s_thakur",
-        "kh_ahmed",
         "r_jadeja",
         "d_chahar",
         "s_kaul",
-
         "ai_hasan",
         "t_iqbal",
-        "m_mortaza",
-        "m_mithun",
-        "m_rahim",
-        "ar_haque",
-        "m_mahmudullah",
-        "mo_hossain",
-        "meh_hasan",
-        "naz_islam",
-        "ab_hider",
-        "m_rahman",
-        "nh_shanto",
-        "m_haque",
-        "r_hossain",
         "l_das",
         "i_kayes",
         "s_sarkar",
-
         "f_zaman",
         "i_haq",
-        "b_azam",
-        "s_masood",
-        "sa_ahmed",
-        "s_malik",
-        "h_sohail",
-        "sha_khan",
-        "moh_nawaz",
-        "fa_ashraf",
-        "has_ali",
-        "j_khan",
-        "u_khan",
-        "as_ali",
         "moh_amir",
         "se_afridi",
-
-        "a_mathews",
-        "k_perera",
-        "k_mendis",
-        "u_tharanga",
-        "d_gunathilaka",
-        "t_perera",
-        "d_shanaka",
-        "dm_de_silva",
-        "a_dananjaya",
-        "d_perera",
-        "a_aponso",
-        "k_rajitha",
-        "s_lakmal",
-        "d_chameera",
-        "l_malinga",
         "d_chandimal",
         "nella",
-        "s_jayasuriya",
+        "s_jayasuriya"
     ]
         for(var i=0;i<arrFind.length;i++){
             var urlFsearch = `https://api.cricapi.com/v1/players?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&offset=0&search=${arrFind[i]}`;
@@ -252,5 +203,180 @@
             forfatchALL()
         }
     }
+    
+    function India(){
+        document.querySelector("#forconteinar").innerHTML=null
+        var arrFindia = [
+            "rg_sharma",
+            "s_dhawan",
+            "l_rahul",
+            "a_rayudu",
+            "m_pandey",
+            "k_jadhav",
+            "ms_dhoni",
+            "d_karthik",
+            "h_pandya",
+            "k_yadav",
+            "y_chahal",
+            "a_patel",
+            "b_kumar",
+            "j_bumrah",
+            "s_thakur",
+            "kh_ahmed",
+            "r_jadeja",
+            "d_chahar",
+            "s_kaul",   
+        ]
+        for(var i=0;i<arrFindia.length;i++){
+            var urlFsearch = `https://api.cricapi.com/v1/players?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&offset=0&search=${arrFindia[i]}`;
+            async function forfatchindia(){
+                res = await fetch(urlFsearch);
+                Data = await res.json();
+                var infoarray = (Data.data);
+                // console.log(infoarray)
+                infoarray.forEach(function(ele){
+                    var playerid =  ele.id;
+                    var urlinfo = `https://api.cricapi.com/v1/players_info?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&id=${playerid}`;
+                    async function innerfaceindia(){
+                        res = await fetch(urlinfo);
+                        data = await res.json();
+                        // console.log(data.data)
+                        var photoimg = data.data.playerImg
+                        var divFallplayer = document.createElement("div");
+                            divFallplayer.setAttribute("id","div")
+                        
+                        var img = document.createElement("img");
+                            img.setAttribute("src",photoimg);
+                            img.setAttribute("id","photoimg")
+                            
+                        
+                        var Plname = document.createElement("p")
+                            Plname.setAttribute("id","Plname")
+                            Plname.innerText= data.data.name
+                        
+                        divFallplayer.append(img,Plname);
+                        document.querySelector("#forconteinar").append(divFallplayer)
+                    }
+                    innerfaceindia()
+                })
+            }
+            forfatchindia()
+        }
+    }
 
+    function paksitan(){
+        document.querySelector("#forconteinar").innerHTML=null
+        var arrFpak = [
+        "f_zaman",
+        "i_haq",
+        "b_azam",
+        "s_masood",
+        "sa_ahmed",
+        "s_malik",
+        "h_sohail",
+        "sha_khan",
+        "moh_nawaz",
+        "fa_ashraf",
+        "has_ali",
+        "j_khan",
+        "u_khan",
+        "as_ali",
+        "moh_amir",
+        "se_afridi",
+        ]
+
+        for(var i=0;i<arrFpak.length;i++){
+            var urlFsearch = `https://api.cricapi.com/v1/players?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&offset=0&search=${arrFpak[i]}`;
+            async function forfatchpak(){
+                res = await fetch(urlFsearch);
+                Data = await res.json();
+                var infoarray = (Data.data);
+                // console.log(infoarray)
+                infoarray.forEach(function(ele){
+                    var playerid =  ele.id;
+                    var urlinfo = `https://api.cricapi.com/v1/players_info?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&id=${playerid}`;
+                    async function innerfacepak(){
+                        res = await fetch(urlinfo);
+                        data = await res.json();
+                        // console.log(data.data)
+                        var photoimg = data.data.playerImg
+                        var divFallplayer = document.createElement("div");
+                            divFallplayer.setAttribute("id","div")
+                        
+                        var img = document.createElement("img");
+                            img.setAttribute("src",photoimg);
+                            img.setAttribute("id","photoimg")
+                            
+                        
+                        var Plname = document.createElement("p")
+                            Plname.setAttribute("id","Plname")
+                            Plname.innerText= data.data.name
+                        
+                        divFallplayer.append(img,Plname);
+                        document.querySelector("#forconteinar").append(divFallplayer)
+                    }
+                    innerfacepak()
+                })
+            }
+            forfatchpak()
+        }
+    }
+    function Shreeilanka(){
+        document.querySelector("#forconteinar").innerHTML=null
+        var arrFslk = [
+        "a_mathews",
+        "k_perera",
+        "k_mendis",
+        "u_tharanga",
+        "d_gunathilaka",
+        "t_perera",
+        "d_shanaka",
+        "dm_de_silva",
+        "a_dananjaya",
+        "d_perera",
+        "a_aponso",
+        "k_rajitha",
+        "s_lakmal",
+        "d_chameera",
+        "l_malinga",
+        "d_chandimal",
+        "nella",
+        "s_jayasuriya"
+        ]
+        for(var i=0;i<arrFslk.length;i++){
+            var urlFsearch = `https://api.cricapi.com/v1/players?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&offset=0&search=${arrFslk[i]}`;
+            async function forfatchslk(){
+                res = await fetch(urlFsearch);
+                Data = await res.json();
+                var infoarray = (Data.data);
+                // console.log(infoarray)
+                infoarray.forEach(function(ele){
+                    var playerid =  ele.id;
+                    var urlinfo = `https://api.cricapi.com/v1/players_info?apikey=857c3a2c-93b1-45b4-8c2b-e33f13c9a35b&id=${playerid}`;
+                    async function innerfaceslk(){
+                        res = await fetch(urlinfo);
+                        data = await res.json();
+                        // console.log(data.data)
+                        var photoimg = data.data.playerImg
+                        var divFallplayer = document.createElement("div");
+                            divFallplayer.setAttribute("id","div")
+                        
+                        var img = document.createElement("img");
+                            img.setAttribute("src",photoimg);
+                            img.setAttribute("id","photoimg")
+                            
+                        
+                        var Plname = document.createElement("p")
+                            Plname.setAttribute("id","Plname")
+                            Plname.innerText= data.data.name
+                        
+                        divFallplayer.append(img,Plname);
+                        document.querySelector("#forconteinar").append(divFallplayer)
+                    }
+                    innerfaceslk()
+                })
+            }
+            forfatchslk()
+        }
+    }
 </script>
