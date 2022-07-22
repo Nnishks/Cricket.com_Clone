@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        #fantasycenter{
+            width: 1020px;
+            background-color: black;
+            height: 1100px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #hedfantasy{
+            height: 40px;
+            display: flex;
+            width: 1020px;
+            background-color: rgb(255, 182, 25);
+            
+        }
+        #FA{
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            font-weight: 700;
+        }
+        #Fantasypreviews{
+            height: 200px;
+            border: 1px solid black;
+        }
+        #preimge1{
+            height: 130px;
+            width:220px;
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+        }
+        #preimge2{
+            height: 130px;
+            width:220px;
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+        }
+        #firsec{
+            display: flex;
+        }
+        #Fantasypreviews{
+                height: 200px;
+                background-color: rgba(255, 255, 255, 0.21);
+                border: .1px solid rgba(255, 255, 255, 0.177);
+                border-radius: 5px;
+                width: 1000px;
+                margin-top: 20px;
+            }
+            #fantasyvideo{
+                height: 250px;
+                background-color: rgba(255, 255, 255, 0.21);
+                border: .1px solid rgba(255, 255, 255, 0.177);
+                border-radius: 5px;
+                margin-top: 20px;
+                width: 1000px;
+                
+            }
+            .hedFanPreviews{
+                color: white;
+                margin-left: 20px;
+            }
+            #firsec{
+                height:163px;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+                
+            }
+            #prepera1{
+                color: white;
+                margin-left: 10px;
+            }
+            #firstpre{
+                display: flex;
+                width: 480px;
+                /* border: 1px solid white; */
+                
+            }
+            .per{
+                font-size:12px;
+                color: white;
+            }
+            .perhed{
+                margin-bottom: 20px;
+                color: white;
+                
+            }
+            #secondpre{
+                display: flex;
+                width: 480px;
+                /* border: 1px solid white; */
+            }
+            #prepera2{
+                margin-left: 10px;
+            }
+            .ffff{
+                font-size: 14px;
+                color: white;
+                background-color: rgb(161, 59, 59);
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px; 
+            }
+            .videodiv{
+               height: 200px;
+               width: 200px;
+               margin-top: 20px;
+            }
+            #fanvideo{
+                display: flex;
+                justify-content: space-around;
+            }
+            .video{
+                width: 200px;
+                border-radius: 10px;
+            }
+            #upcoming{
+                width: 1000px;
+                margin-top: 20px;
+
+            }
+            #upcomingmatches{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                /* justify-content: center; */
+                gap: 15px;
+            }
+            .hedup{
+                color: gray;
+            }
+            .upmatch{
+                height: 130px;
+                border: .1px solid rgb(255, 182, 25);
+                background-color: rgba(255, 255, 255, 0.21);
+                border-radius: 5px;
+                width: 490px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+            }
+            #completedmatches{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                /* justify-content: center; */
+                gap: 15px;
+            }
+            #completed{
+                width: 1000px;
+                margin-top: 20px;
+            }
+            .cmmatch{
+                height: 110px;
+                border: .1px solid rgba(255, 255, 255, 0.177);
+                background-color: rgba(255, 255, 255, 0.21);
+                border-radius: 5px;
+                width: 490px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .h5odi{
+                color: white;
+
+            }
+            .countrydiv{
+                display: flex;
+                height: 40px;
+                width: 450px;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .flagcoun{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+            .namecountry{
+                color: rgb(111, 108, 108);
+            }
+            .vs{
+                background-color: rgb(255, 182, 25);
+                font-weight: 700;
+                border-radius:50%;
+            }
+            .imgcounttry{
+                width: 150px;
+                justify-content: space-around;
+                display: flex;
+            }
+            .starttime{
+             background-color:rgb(255, 182, 25);
+             width:140px;
+             text-align: center;
+             border-radius: 10px;
+            }
+            .manchester{
+                display: flex;
+                width: 170px;
+                justify-content: space-between;
+            }
+            .laaa{
+                height: 20px;
+                background-color: grey;
+                width: 1px;
+            }
+            .date{
+                color: gray;
+            }
+    </style>
+</head>
+<body>
+    <div id="fantasycenter">
+        <div id="hedfantasy">
+             <p id="FA">FANTASY CENTER</p>
+        </div>
+        <div id="upcoming">
+             <div id="hedupcoming"><p class="hedup">UPCOMING MATCHES</p></div>
+             <div id="upcomingmatches">
+                <div class="upmatch">
+                      <h5 class="h5odi">2nd ODI, South Africa tour of England, 2022</h5>
+                      <div class="countrydiv">
+                          <div class="imgcounttry">
+                            <img class="flagcoun" src="https://images.cricket.com/teams/3_flag_safari.png" alt="">
+                            <h1 class="namecountry">ENG</h1>
+                          </div>
+                          <p class="vs">VS</p>
+                          <div class="imgcounttry">
+                            <h1 class="namecountry">SA</h1>
+                            <img class="flagcoun" src="https://images.cricket.com/teams/7_flag_safari.png" alt="">
+                          </div>
+                      </div>
+                      <div class="starttime"><p>Starts in 0h 0m 0s</p></div>
+                      <div class="manchester">
+                          <p class="date">july 22 2022</p>
+                          <div class="laaa"></div>
+                          <p class="date"> Manchester</p>
+                      </div>
+                </div>
+                <div class="upmatch">
+                    <h5 class="h5odi">3rd T20I, New Zealand tour of Ireland, 2022</h5>
+                    <div class="countrydiv">
+                        <div class="imgcounttry">
+                          <img class="flagcoun" src="https://images.cricket.com/teams/13_flag_safari.png" alt="">
+                          <h1 class="namecountry">IRE</h1>
+                        </div>
+                        <p class="vs">VS</p>
+                        <div class="imgcounttry">
+                          <h1 class="namecountry">NZ</h1>
+                          <img class="flagcoun" src="https://images.cricket.com/teams/5_flag_safari.png" alt="">
+                        </div>
+                    </div>
+                    <div class="starttime"><p>Starts in 0h 12m 34s</p></div>
+                    <div class="manchester">
+                        <p class="date">july 22 2022</p>
+                        <div class="laaa"></div>
+                        <p class="date">Stormont</p>
+                    </div>
+                </div>
+                <div class="upmatch">
+                    <h5 class="h5odi">2nd Test, Pakistan tour of Sri Lanka, 2022</h5>
+                    <div class="countrydiv">
+                        <div class="imgcounttry">
+                          <img class="flagcoun" src="https://images.cricket.com/teams/8_flag_safari.png" alt="">
+                          <h1 class="namecountry">SL</h1>
+                        </div>
+                        <p class="vs">VS</p>
+                        <div class="imgcounttry">
+                          <h1 class="namecountry">PAK</h1>
+                          <img class="flagcoun" src="https://images.cricket.com/teams/6_flag_safari.png" alt="">
+                        </div>
+                    </div>
+                    <div class="starttime"><p>July 24th 2022</p></div>
+                    <div class="manchester">
+                        <p class="date">july 22 2022</p>
+                        <div class="laaa"></div>
+                        <p class="date">Galle</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div id="completed">
+              <div id="hedcompleted"><p class="hedup">COMPLETED MATCHES</p></div>
+              <div id="completedmatches">
+                <div class="cmmatch">
+                    <h5 class="h5odi">2nd Test, Pakistan tour of Sri Lanka, 2022</h5>
+                    <div class="countrydiv">
+                        <div class="imgcounttry">
+                          <img class="flagcoun" src="https://images.cricket.com/teams/8_flag_safari.png" alt="">
+                          <h1 class="namecountry">SL</h1>
+                        </div>
+                        <p class="vs">VS</p>
+                        <div class="imgcounttry">
+                          <h1 class="namecountry">IND</h1>
+                          <img class="flagcoun" src="https://images.cricket.com/teams/4_flag_safari.png" alt="">
+                        </div>
+                    </div>
+                    <div class="manchester">
+                        <h5 class="h5odi">INDIA  won by 45 runs</h5>
+                    </div>
+                </div>
+                <div class="cmmatch">
+                    <h5 class="h5odi">2nd Test, Pakistan tour of Sri Lanka, 2022</h5>
+                    <div class="countrydiv">
+                        <div class="imgcounttry">
+                          <img class="flagcoun" src="https://images.cricket.com/teams/9_flag_safari.png" alt="">
+                          <h1 class="namecountry">WI</h1>
+                        </div>
+                        <p class="vs">VS</p>
+                        <div class="imgcounttry">
+                          <h1 class="namecountry">NZ</h1>
+                          <img class="flagcoun" src="https://images.cricket.com/teams/5_flag_safari.png" alt="">
+                        </div>
+                    </div>
+                    <div class="manchester">
+                        <h5 class="h5odi">WI  won by 23 runs</h5>
+                    </div>
+                </div>
+                <div class="cmmatch">
+                    <h5 class="h5odi">2nd Test, Pakistan tour of Sri Lanka, 2022</h5>
+                    <div class="countrydiv">
+                        <div class="imgcounttry">
+                          <img class="flagcoun" src="https://images.cricket.com/teams/7_flag_safari.png" alt="">
+                          <h1 class="namecountry">SA</h1>
+                        </div>
+                        <p class="vs">VS</p>
+                        <div class="imgcounttry">
+                          <h1 class="namecountry">IND</h1>
+                          <img class="flagcoun" src="https://images.cricket.com/teams/5_flag_safari.png" alt="">
+                        </div>
+                    </div>
+                    <div class="manchester">
+                        <h5 class="h5odi">NEW  won by 32 runs</h5>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div id="Fantasypreviews">
+            <div ><p class="hedFanPreviews">FANTASY PREVIEWS</p></div>
+            <hr>
+            <div id="firsec">
+                <div id="firstpre">
+                    <div style="display:flex; flex-direction: column;">
+                        <img id="preimge1" src="https://images-cricketcom.imgix.net/news-1658225418312" alt="">
+                        <p class="ffff">FANTASY</p>
+                    </div>
+                    <div id="prepera1">
+                        <h5 class="perhed">Fantasy: Back Shreyas lyer to be a top performer</h5>
+                        <p class="per">Here are a few tips that might help you create your fantasy team for t</p>
+                        <p class="per">cricket.com staff</p>
+                        <p class="per">21 Jull 2022</p>
+                    </div>
+                </div>
+                <div id="secondpre">
+                     <div style="display:flex; flex-direction: column;">
+                        <img  id="preimge2" src="https://images-cricketcom.imgix.net/news-1658157468749" alt="">
+                         <p class="ffff">FANTASY</p>
+                     </div>
+                     <div id="prepera2">
+                        <h5 class="perhed">Fantasy: Back Shreyas lyer to be a top performer</h5>
+                        <p class="per">Here are a few tips that might help you create your fantasy team for t</p>
+                        <p class="per">cricket.com staff</p>
+                        <p class="per">21 Jull 2022</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+       
+        <div id="fantasyvideo">
+            <div id="hedFanvideo">
+                <p class="hedFanPreviews">FANTASY VIDEO</p>
+            </div>
+            <hr>
+            <div id="fanvideo">
+                <div id="firstfanvideo" class="videodiv">
+                    <iframe class="video" src="https://www.youtube.com/embed/JWWS4OIQDf8" title="Bangladesh vs New Zealand, T20I series, Mirpur I Fantasy Research Centre I Cricket.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="per">Bangladesh vs New Zealand, T20I series, Mirpur I Fantasy Research Centre I Cricket.com</p>
+                </div>
+                <div id="secfanvideo" class="videodiv">
+                    <iframe class="video" src="https://www.youtube.com/embed/rHaR4t8s5fE" title="England vs India, 3rd Test, Leeds I Whom to PICK? I Fantasy Research Centre I Cricket.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="per">England vs India, 3rd Test, Leeds I Whom to PICK? I Fantasy Research Centre I Cricket.com</p>
+                </div>
+                <div id="therdfanvideo" class="videodiv">
+                    <iframe class="video" src="https://www.youtube.com/embed/yfPeMS1ddZ8" title="West Indies vs Pakistan, 2nd Test, Kingston I Whom to PICK? I Fantasy Research Centre I Cricket.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="per">West Indies vs Pakistan, 2nd Test, Kingston I Whom to PICK? I Fantasy Research Centre I Cricket.com</p>
+                </div>
+                <div id="forthfanvideo" class="videodiv">
+                    <iframe class="video" src="https://www.youtube.com/embed/AfA56tgSsNQ" title="England vs India, 2nd Test, Lord's I Whom to PICK? I Fantasy Research Centre I Cricket.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="per">England vs India, 2nd Test, Lord's I Whom to PICK? I Fantasy Research Centre I Cricket.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
