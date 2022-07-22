@@ -8,7 +8,7 @@ let data = [
       "He succeeds Justice (Retd) D K Jain, whose term ended in June last year",
     category: "NEWS",
     category1: "News",
-    author: "PTI",
+    author: "Shubh Aggarwal",
     time: "19 Jul 2022",
     date: "19 Jul 2022 | 05:00 PM",
     article:
@@ -48,7 +48,7 @@ let data = [
     description: "The fiery all-rounder shows his value on a consistent basis",
     category: "OPINION",
     category1: "Features",
-    author: "Aakash Sivasubramaniam",
+    author: "Aakash Sivamaniam",
     time: "19 Jul 2022 ",
     date: "19 Jul 2022 | 12:24 PM",
     article:
@@ -136,7 +136,7 @@ let data = [
       "Thr right-hander smashed a stunning century to help Proteas win the first ODI by 62 runs",
     category: "MATCH REPORT",
     category1: "Match Related",
-    author: "AFP",
+    author: "Shweta Haranhalli",
     time: "20 Jul 2022 ",
     date: "20 Jul 2022 | 07:47 AM",
     article:
@@ -150,7 +150,7 @@ let data = [
       "Pakistan ended day four on 222/3, still needing 120 runs to take the lead in the two-match series",
     category: "MATCH REPORT",
     category1: "Match Related",
-    author: "AFP",
+    author: "Shubh Aggarwal",
     time: "19 Jul 2022 ",
     date: "19 Jul 2022 | 05:50 PM",
     article:
@@ -192,7 +192,7 @@ let data = [
     description: "India’s 2-1 win over England signals an era in new direction",
     category: "OPINION",
     category1: "Features",
-    author: "Aakash Sivasubramaniam",
+    author: "Aakash Sivamaniam",
     time: "18 Jul 2022 ",
     date: "18 Jul 2022 | 03:10 PM",
     article:
@@ -206,7 +206,7 @@ let data = [
       "Ireland were bundled out for 142 runs in the first innings courtesy of a four-wicket haul from Lockie Ferguson",
     category: "MATCH REPORT",
     category1: "Match Related",
-    author: "AFP",
+    author: "Shubh Aggarwal",
     time: "19 Jul 2022",
     date: "19 Jul 2022 | 08:49 AM",
     article:
@@ -249,11 +249,19 @@ function display (data){
 
     let author = document.createElement("p")
     author.innerText=ele.author
+    author.id="author"
+
+    let anony_img= document.createElement("img")
+    anony_img.src = "https://www.cricket.com/svgs/user.svg";
+    anony_img.id="anony_img"
 
     let time= document.createElement("div")
     time.innerText=ele.time;
+    time.id="time"
 
-    author_time.append(author,time)
+  
+
+    author_time.append(anony_img,author,time)
 
     details.append(title,des,author_time)
 
@@ -292,6 +300,10 @@ function display (data){
 display(data)
 
 let latest= document.getElementById("Latest").addEventListener("click",latest_fun)
+
+let late = document.getElementById("Latest");
+late.style.cursor="pointer"
+
 
 function latest_fun(){
 
