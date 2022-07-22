@@ -4,6 +4,7 @@ let cont=document.querySelector("#h_n_btm")
 
 
 let get=async ()=>{
+    try{
     let url=`https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=901bd0d3f4af4d1698306a25b880c39b `
     let res= await fetch(url);
     let res1= await res.json();
@@ -15,8 +16,15 @@ let get=async ()=>{
        ||  el.source.name=="Crictracker.com" || el.source.name=="Cricket.Com Staff"
        || el.source.name=="Cricket.Com Staff")
   })
+  
   console.log(data)
     display(cont,data)
+}catch{
+    setTimeout(function(){
+        alert("the news api only works on local host, for demo pls see video")
+    },5000)
+  
+}
 }
 get()
 
