@@ -1,0 +1,50 @@
+#div1s{
+    display: flex;
+    flex-direction: column;
+    /* border:2px solid red; */
+    /* max-width: 1200px; */
+    /* height:250px; */
+    margin: auto;
+    width: 1100px;
+   margin-top: 50px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#div2s{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 250px;
+    width: 1050px;
+    /* border:2px solid red; */
+     overflow: hidden; 
+     padding-left: 20px;
+}
+.sc_img{
+    margin-right: 30px;
+    width:230px;
+    height: 200px;
+    border-radius: 10px;
+    /* border:2px solid red; */
+    margin-bottom: -10px;
+ 
+}
+.sc_img1{
+    margin-bottom:-60px;
+}
+.sc_img1+p{
+    border:0px solid red;
+    color: white;
+    padding-left: 10px;
+}
+#sh{
+    padding-left: 20px;
+    /* border:2px solid red; */
+    height: 60px;
+    font-weight: 600;
+    font-family:  Montserrat;
+    border-bottom: 0.2px solid rgb(228, 227, 227);
+}
+.stadium{
+    /* border:2px solid red; */
+    
+}
