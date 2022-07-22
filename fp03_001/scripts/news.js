@@ -8,7 +8,7 @@ let data = [
       "He succeeds Justice (Retd) D K Jain, whose term ended in June last year",
     category: "NEWS",
     category1: "News",
-    author: "PTI",
+    author: "Shubh Aggarwal",
     time: "19 Jul 2022",
     date: "19 Jul 2022 | 05:00 PM",
     article:
@@ -48,7 +48,7 @@ let data = [
     description: "The fiery all-rounder shows his value on a consistent basis",
     category: "OPINION",
     category1: "Features",
-    author: "Aakash Sivasubramaniam",
+    author: "Aakash Sivamaniam",
     time: "19 Jul 2022 ",
     date: "19 Jul 2022 | 12:24 PM",
     article:
@@ -136,7 +136,7 @@ let data = [
       "Thr right-hander smashed a stunning century to help Proteas win the first ODI by 62 runs",
     category: "MATCH REPORT",
     category1: "Match Related",
-    author: "AFP",
+    author: "Shweta Haranhalli",
     time: "20 Jul 2022 ",
     date: "20 Jul 2022 | 07:47 AM",
     article:
@@ -150,14 +150,15 @@ let data = [
       "Pakistan ended day four on 222/3, still needing 120 runs to take the lead in the two-match series",
     category: "MATCH REPORT",
     category1: "Match Related",
-    author: "AFP",
+    author: "Shubh Aggarwal",
     time: "19 Jul 2022 ",
     date: "19 Jul 2022 | 05:50 PM",
     article:
       "Opener Abdullah Shafique hit a gritty century to keep Pakistan in the hunt to chase down a victory target of 342 in the opening Test against Sri Lanka on Tuesday. Pakistan ended day four on 222 for three, still needing 120 runs to take the lead in the two-match series at Galle, where the highest successful fourth-innings chase is 268 by Sri Lanka against New Zealand in 2019. Shafique, batting on 112, and skipper Babar Azam, who made 55, put together 101 runs for the third wicket but spinner Prabath Jayasuriya broke through just a few overs before the close of play. Jayasuriya bowled talisman Azam with his left-arm spin around the batsman's legs with a delivery that spun sharply from outside leg to rattle the stumps of the right-hander, who looked visibly shocked. Wicketkeeper-batsman Mohammad Rizwan was batting on seven at stumps alongside Shafique, who had so far faced 289 balls and hit five boundaries and one six. Pakistan began strongly with an 87-run partnership between Shafique and fellow opener Imam-ul-Haq, who made 35, but an alert stumping from wicketkeeper Niroshan Dickwella broke the stand .The left-handed Imam missed a delivery from off-spinner Ramesh Mendis and Dickwella clipped off the bails, with the decision going up to the third umpire. After different TV angles it was established that Imam's foot was just millimetres off the ground when the bails were dislodged. Azhar Ali was the next to go when he edged a ball from Jayasuriya to first slip. He made six off 32 deliveries. Azam, who hit a defiant 119 in Pakistan's first-innings total of 218, then joined Shafique as the two rebuilt the innings on a turning pitch. Azam reached his fifty and two balls later Shafique got his second Test hundred with a single off Maheesh Theekshana, raising his bat to a standing ovation from the dressing room. Azam, who crossed 10,000 international runs on day two and averages over 45, went past 3,000 Test runs during another stubborn knock. Jayasuriya, who claimed a five-wicket haul in the previous innings, kept up the pressure with his turners and sliders. Sri Lanka took the second new ball in the 81st over but the spinners kept up the attack in the final few tense overs of the day. In the morning, Sri Lanka resumed the day on 329-9 in their second innings. Dinesh Chandimal was stranded on 94 when they were all out for 337.",
   },
   {
-    image: "",
+    image:
+      "https://images-cricketcom.imgix.net/news-1658221584989?auto=compress&dpr=2&w=1&h=200",
     title:
       "Ben Stokes: A career riddled with setbacks that fueled roaring comebacks",
     description:
@@ -191,7 +192,7 @@ let data = [
     description: "India’s 2-1 win over England signals an era in new direction",
     category: "OPINION",
     category1: "Features",
-    author: "Aakash Sivasubramaniam",
+    author: "Aakash Sivamaniam",
     time: "18 Jul 2022 ",
     date: "18 Jul 2022 | 03:10 PM",
     article:
@@ -205,7 +206,7 @@ let data = [
       "Ireland were bundled out for 142 runs in the first innings courtesy of a four-wicket haul from Lockie Ferguson",
     category: "MATCH REPORT",
     category1: "Match Related",
-    author: "AFP",
+    author: "Shubh Aggarwal",
     time: "19 Jul 2022",
     date: "19 Jul 2022 | 08:49 AM",
     article:
@@ -248,11 +249,19 @@ function display (data){
 
     let author = document.createElement("p")
     author.innerText=ele.author
+    author.id="author"
+
+    let anony_img= document.createElement("img")
+    anony_img.src = "https://www.cricket.com/svgs/user.svg";
+    anony_img.id="anony_img"
 
     let time= document.createElement("div")
     time.innerText=ele.time;
+    time.id="time"
 
-    author_time.append(author,time)
+  
+
+    author_time.append(anony_img,author,time)
 
     details.append(title,des,author_time)
 
@@ -291,6 +300,10 @@ function display (data){
 display(data)
 
 let latest= document.getElementById("Latest").addEventListener("click",latest_fun)
+
+let late = document.getElementById("Latest");
+late.style.cursor="pointer"
+
 
 function latest_fun(){
 

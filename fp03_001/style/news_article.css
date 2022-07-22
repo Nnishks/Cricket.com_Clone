@@ -1,0 +1,64 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    line-height: 1.75;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    background-color:#e8e9ef
+}
+
+#container{
+    background-color: white;
+    width: 930px;
+    margin: auto;
+}
+
+#article_img{
+    height: 500px;
+    width: 930px;
+}
+#date_auth{
+    display: flex;
+    font-size: 13px;
+}
+#auth{
+    margin-left: 190px;
+}
+
+
+
+#detail_article{
+    display: flex;
+}
+#article1{
+    background-color: white;
+    width: 480px;
+    margin-left: 285px;
+    padding: 10px;
+    border-right: 1px solid lightgray;
+}
+#h3{
+    border-bottom: 1px soild lightgrey;
+}
+#related{
+    text-align: center;
+    width: 431px;
+    background-color: white;
+    
+}
+
+#des{
+ 
+ border-left: 2px solid rgb(155, 0, 13);
+ padding: 4px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: lightslategray;
+}
+
+#article{
+    font-size: 13px;
+}

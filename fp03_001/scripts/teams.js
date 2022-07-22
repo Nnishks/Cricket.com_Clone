@@ -140,7 +140,7 @@ let women = [
   },
   {
     team: "INTERNATIONAL",
-    team_name: "Sri Lamka Women",
+    team_name: "Sri Lanka Women",
     team_img:
       "https://www.cricket.com/_next/image?url=%2Fpngs%2Fteam-web.jpg&w=1080&q=75",
   },
@@ -162,14 +162,18 @@ let women = [
 
         let name= document.createElement("h5")
         name.innerText= ele.team_name
+        name.id="team_name"
 
         let img=document.createElement("img")
         img.src=ele.team_img;
-        img.id="img"
+        img.id="team_img"
 
         let ranking= document.createElement("p")
         ranking.innerText=ele.ranking;
         ranking.id="rank";
+
+        let hr= document.createElement("hr")
+        hr.id="horizontal_line"
 
         let match_type= document.createElement("div")
         match_type.id="match"
@@ -179,9 +183,12 @@ let women = [
 
         let test0= document.createElement("div")
         test0.innerText=ele.test;
+        test0.style.color = "#d64b4b";
+        test0.style.fontSize="16px"
 
         let test1=document.createElement("div")
         test1.innerText="Test"
+        test1.style.color="lightgrey"
 
         test.append(test0,test1)
 
@@ -190,9 +197,12 @@ let women = [
 
         let odi0=document.createElement("div")
         odi0.innerText=ele.ODI;
+         odi0.style.color = "#d64b4b";
+         odi0.style.fontSize = "16px";
 
         let odi1= document.createElement("div")
         odi1.innerText="ODI"
+        odi1.style.color="lightgrey"
 
         odi.append(odi0,odi1)
         
@@ -201,13 +211,20 @@ let women = [
 
         let t200=document.createElement("div")
         t200.innerText=ele.T20;
+         t200.style.color = "#d64b4b";
+         t200.style.fontSize = "16px";
 
         let t201=document.createElement("div")
         t201.innerText="T20"
+        t201.style.color="lightgrey"
+
+        let match_div= document.createElement("div")
+        match_div.id="match_div"
+        match_div.append(test,odi,t20)
 
         t20.append(t200,t201)
 
-        card.append(name,img,ranking,test,odi,t20)
+        card.append(name,img,ranking,hr,match_div)
 
         document.getElementById("box1").append(card)
 
@@ -231,6 +248,7 @@ let display_womes=(women)=>{
 
         let img= document.createElement("img")
         img.src=ele.team_img
+        img.id="women_img"
 
         card.append(name,img)
         document.getElementById("box2").append(card)
@@ -320,7 +338,7 @@ let other_leagues = [
     year: "",
   },
   {
-    team_name: "Sunrisers Hydrabad",
+    team_name: "Gujarat Titans",
     team_img:
       "https://www.cricket.com/_next/image?url=%2Fpngs%2Fteam-web.jpg&w=1080&q=75",
     cup: "https://www.cricket.com/svgs/trophy2.svg",
@@ -330,8 +348,82 @@ let other_leagues = [
 
 
 let display_leagues= (other_leagues)=>{
+  document.getElementById("box1").innerHTML=null;
+  document.getElementById("box2").innerHTML = null;
+
 
     other_leagues.forEach((ele)=>{
-        
+
+      let card= document.createElement("div")
+      card.id="women_div"
+
+      let name= document.createElement("h5")
+      name.innerText=ele.team_name;
+
+      let img=document.createElement("img")
+      img.src=ele.team_img;
+      img.id="ipl_img"
+
+      let winner= document.createElement("div")
+      winner.id="winner";
+
+      let cup= document.createElement("img")
+      cup.src=ele.cup 
+      cup.id="cup"
+      
+      let year= document.createElement("p")
+      year.innerText=ele.year;
+      year.id="year1";
+
+      winner.append(cup,year)
+      card.append(name,img,winner)
+      document.getElementById("box2").append(card)
     })
 }
+
+document.getElementById("other_league").addEventListener("click",display_league)
+
+function display_league(){
+
+  document.getElementById("women").innerText=null
+  
+
+    display_leagues(other_leagues)
+}
+
+
+
+  
+
+    // const options = {
+    //   method: "GET",
+    //   headers: {
+    //     "X-RapidAPI-Key": "c09b3dcdb7mshcc55e7fcc52919dp142149jsn36e9a732302b",
+    //     "X-RapidAPI-Host": "cricbuzz-cricket.p.rapidapi.com",
+    //   },
+    // };
+
+    // fetch(
+    //   "https://cricbuzz-cricket.p.rapidapi.com/teams/v1/international",
+    //   options
+    // )
+    //   .then((response) => response.json())
+    //   .then((response) => console.log(response))
+    //   team_name()
+    //   .catch((err) => console.error(err));
+
+      function team_name(response){
+        response.forEach((ele)=>{
+
+          let name= document.createElement("div")
+          name.id=name;
+
+          let p= document.createElement("p")
+          p.innerText=ele.teamName;
+
+          name.append(p)
+          document.getElementById("result").append(name)
+
+        })
+
+      }
