@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/smooth-book-4341/otp.css">
+</head>
+<body>
+    <div id="otp_outer_box">
+        <div id="cross"><a id="anchor_of_cross" href="">X</a></div>
+        <p id="title">ENTER OTP</p>
+        
+        <div id="containing_input_tag">
+            <input type="tel" id="text1" onkeyup="press(event,'','text1','text2')"  class="otp_input_box" pattern="[0-9]"  maxlength="1">
+            <input type="tel" id="text2" onkeyup="press(event,'text1','text2','text3')"  class="otp_input_box" pattern="[0-9]"  maxlength="1">
+            <input type="tel" id="text3" onkeyup="press(event,'text2','text3','text4')"  class="otp_input_box" pattern="[0-9]"  maxlength="1">
+            <input type="tel" id="text4" onkeyup="press(event,'text3','text4','text5')"  class="otp_input_box" pattern="[0-9]"  maxlength="1">
+            <input type="tel" id="text5" onkeyup="press(event,'text4','text5','text6')"  class="otp_input_box" pattern="[0-9]"  maxlength="1">
+            <input type="tel" id="text6" onkeyup="press(event,'text5','text6','')"  class="otp_input_box" pattern="[0-9]"  maxlength="1">
+        </div>
+        <div id="login_from_outsideIndia">Did't recieved OTP?<a id="clickHere" href="">Resent</a></div>
+        <div id="button_div">CONFIRM</div>
+    </div>
+
+</body>
+</html>
+<script src="/smooth-book-4341/otp.js"></script>
