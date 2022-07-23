@@ -66,9 +66,6 @@ let appendfunc = (arr, container) => {
       div3.append(div4, div5);
       div2.append(div1, div3);
       container.append(div2);
-
-      var myDate = convertformate(elem.dateTimeGMT);
-      // console.log("jul" + " " + myDate);
     }
     ++count;
   });

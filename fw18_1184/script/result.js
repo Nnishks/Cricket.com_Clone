@@ -11,13 +11,12 @@ const a2 = document.querySelector("#a2");
 
 fet(url).then((res) => {
   live.style.background = "none";
-  results.style.background = "none";
+  upcomming.style.background = "none";
+  a1.style.color = "black";
   a2.style.color = "black";
-  a3.style.color = "black";
+  a3.style.color = "white";
 
-  a1.style.color = "white";
-  upcomming.style.background = "linear-gradient(270deg, #d44030, #9b000d)";
-
+  results.style.background = "linear-gradient(270deg, #d44030, #9b000d)";
   console.log(res.data.matchList);
   appe(res.data.matchList, container, heading);
 });
