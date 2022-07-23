@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/smooth-book-4341/video/video.css">
+  </head>
+  <body>
+    <div id="red"></div>
+    <div id="video-container">
+        <img class="cricket-image" src="https://img.youtube.com/vi/5ntcnGq5YlA/mqdefault.jpg" alt="">
+        <div id="playbutton" onclick="playVideo('/smooth-book-4341/video/GROUND_ZERO!_Buttler,_Root_&_Moeen_train_before_3rd_ODI_against.mp4')">
+            <img class="cricket-image" src="https://toppng.com/uploads/preview/youtube-png-transparent-youtube-play-button-j-11562850859itnc4oujrg.png" alt="">
+        </div>
+        <video id="myVideo" autoplay  > 
+            <source src="/smooth-book-4341/video/GROUND_ZERO!_Buttler,_Root_&_Moeen_train_before_3rd_ODI_against.mp4" type=" video/mp4">
+        </video>
+       
+    </div>
+    
+    
+  </body>
+</html>
+<script >
+    let playvideo=document.getElementById('video-container')
+    function playVideo (file){
+        myVideo.src=file;
+        playvideo.style.display="block"
+    }
+</script>
+

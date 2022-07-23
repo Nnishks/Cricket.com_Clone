@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#red{
+    
+    width: 100%;
+    height: 150px;
+    background-color: rgb(208,60,46);
+
+}
+#video-container{
+    width: 70%;
+    height: 370px;
+    border: 1px solid black;
+    margin-left: 15%;
+    margin-top: -100px;
+    position: relative;
+    
+}
+.cricket-image{
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+}
+#playbutton{
+    width: 50px;
+    height: 50px;
+    border: 1px black solid;
+    position: absolute;
+    top: 50%;
+    left: 47.5%;
+}
+#myVideo{
+    width: 100%;
+    height: 100%;
+    
+    position:absolute;
+}
