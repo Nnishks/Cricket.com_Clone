@@ -2,6 +2,7 @@ import { fet, appe } from "../components/livefetapp.js";
 let url = `https://api.cricapi.com/v1/currentMatches?apikey=09f675d8-90b6-4f11-98ff-d5a7d53cb0c5&offset=0`;
 let container = document.querySelector("#grid_box_body");
 const heading = document.querySelector("#gid_box_head");
+
 const live = document.querySelector("#live");
 const results = document.querySelector("#results");
 const upcomming = document.querySelector("#upcomming");
