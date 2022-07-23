@@ -1,0 +1,83 @@
+body{
+    /* filter: blur(50px);
+  -webkit-filter: blur(8px); */
+  backdrop-filter: blur(10px);
+  background: #00000033;
+}
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: gray;
+}
+#navbar{
+    filter: blur(3px);
+}
+#otp_outer_box{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    width: 37%;
+    height: 320px;
+    margin-left: 31.5%;
+    margin-top: 12.5%;
+    position: fixed;
+}
+#cross{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-right: 30px;
+    font-weight: 600;
+}
+#anchor_of_cross{
+    text-decoration: none;
+}
+#title{
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#containing_input_tag{
+    
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.otp_input_box{
+    width: 50px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    margin-bottom: 20px;
+}
+#login_from_outsideIndia{
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    
+}
+#clickHere{
+    color: red;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+
+}
+#button_div{
+    margin: auto;
+    color: white;
+    background-color: rgb(119,119,119);
+    width: 100px;
+    padding: 5px 50px 5px 50px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+

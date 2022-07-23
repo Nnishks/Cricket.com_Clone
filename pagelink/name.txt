@@ -1,0 +1,16 @@
+clone of www.cricket.com
+
+Team 
+Nishant kumar singh:home page,stadium,ranking
+
+Md Ali Mujtaba:navbar,footer,login
+Aamir Khan Zahir Khan:criclytics,schedules
+Janhavi Prabhu:news,team
+Sagar Thakur:fantasy,player
+
+manager
+Abhishek Dadhich
+
+note points: 1. main file is index.html where all pages are linked .
+             2. news api on home page will work only in local host ,not while get 
+              deployed
