@@ -27,7 +27,7 @@ This is the project work of Unit 3 and we are the team of 5 people who have cont
 # Authors
 
 - @Nnishks
-- @mdalimujtaba
+- mdalimujtaba
 - @Aamir Khan
 - @Janhavi Prabhu
 - @Sagar Singh Thakur
