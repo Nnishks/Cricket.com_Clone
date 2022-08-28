@@ -1,5 +1,5 @@
 # smooth-book-4341
-clone of ww.cricket.com
+clone of www.cricket.com
 
 # Cricket.com
 
