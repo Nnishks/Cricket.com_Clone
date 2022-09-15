@@ -167,7 +167,6 @@ else if(str==11){
 else{
     return "dec"
 }
-
 }
 document.querySelector("#h_img_1").addEventListener("click",function(){
     document.querySelector("#pop1").style.display="block"
@@ -184,7 +183,7 @@ document.querySelector("#h_img_1").addEventListener("click",function(){
         //         e.preventDefault();
         //     }
         // }, false);
-        document.querySelector("body").style.overflowY='hidden'
+        // document.querySelector("body").style.overflowY='hidden'
 
 })
 document.querySelector("#cos1").addEventListener("click",function(){
@@ -192,7 +191,7 @@ document.querySelector("#cos1").addEventListener("click",function(){
     document.querySelector("#h_news").style.filter='blur(0px)'
     document.querySelector("#navbar").style.filter='blur(0px)'
     document.querySelector("#footer").style.filter='blur(0px)'
-    document.querySelector("body").style.overflowY='scroll'
+    // document.querySelector("body").style.overflowY='scroll'
 })
 
 
@@ -201,14 +200,14 @@ document.querySelector("#h_img_2").addEventListener("click",function(){
     document.querySelector("#h_news").style.filter='blur(3px)'
     document.querySelector("#navbar").style.filter='blur(5px)'
     document.querySelector("#footer").style.filter='blur(5px)'
-    document.querySelector("body").style.overflowY='hidden'
+    // document.querySelector("body").style.overflowY='hidden'
 })
 document.querySelector("#cos2").addEventListener("click",function(){
     document.querySelector("#pop2").style.display="none"
     document.querySelector("#h_news").style.filter='blur(0px)'
     document.querySelector("#navbar").style.filter='blur(0px)'
     document.querySelector("#footer").style.filter='blur(0px)'
-    document.querySelector("body").style.overflowY='scroll'
+    // document.querySelector("body").style.overflowY='scroll'
 })
 
 
@@ -217,14 +216,14 @@ document.querySelector("#h_img_3").addEventListener("click",function(){
     document.querySelector("#h_news").style.filter='blur(3px)'
     document.querySelector("#navbar").style.filter='blur(7px)'
     document.querySelector("#footer").style.filter='blur(5px)'
-    document.querySelector("body").style.overflowY='hidden'
+    // document.querySelector("body").style.overflowY='hidden'
 })
 document.querySelector("#cos3").addEventListener("click",function(){
     document.querySelector("#pop3").style.display="none"
     document.querySelector("#h_news").style.filter='blur(0px)'
     document.querySelector("#navbar").style.filter='blur(0px)'
     document.querySelector("#footer").style.filter='blur(0px)'
-    document.querySelector("body").style.overflowY='scroll'
+    // document.querySelector("body").style.overflowY='scroll'
 })
 
 
@@ -233,14 +232,14 @@ document.querySelector("#h_img_4").addEventListener("click",function(){
     document.querySelector("#h_news").style.filter='blur(3px)'
     document.querySelector("#navbar").style.filter='blur(5px)'
     document.querySelector("#footer").style.filter='blur(5px)'
-    document.querySelector("body").style.overflowY='hidden'
+    // document.querySelector("body").style.overflowY='hidden'
 })
 document.querySelector("#cos4").addEventListener("click",function(){
     document.querySelector("#pop4").style.display="none"
     document.querySelector("#h_news").style.filter='blur(0px)'
     document.querySelector("#navbar").style.filter='blur(0px)'
     document.querySelector("#footer").style.filter='blur(0px)'
-    document.querySelector("body").style.overflowY='scroll'
+    // document.querySelector("body").style.overflowY='scroll'
 })
 
 
