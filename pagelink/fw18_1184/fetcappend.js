@@ -1,5 +1,7 @@
 let fetchingdata = async (url) => {
+  //console.log(fetch(url))
     let res = await fetch(url);
+    console.log(res)
     let y = await res.json();
     return y;
   };
