@@ -1,5 +1,8 @@
 # smooth-book-4341
 clone of www.cricket.com
+<div width="100%">
+<image src="https://pbs.twimg.com/profile_images/1159031973991501824/5rmV83Dg_400x400.jpg" width="100%"/>
+</div>
 
 # Cricket.com
 
